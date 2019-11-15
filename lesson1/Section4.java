@@ -5,8 +5,7 @@
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
-class Section4
-{
+class Section4 {
     public static void main(String[] argv) {
 
         if (argv.length < 1) {

@@ -2,13 +2,12 @@
 
 //import java.util.ArrayList;
 
-public class Section5TestBinarySearch
-{
+public class Section5TestBinarySearch {
     public static void main(String[] argv) {
         //ArrayList<Integer> target1 = new ArrayList<Integer>({
         //                         1,5,7,8,9,11,18,19,20,25
         //                         });
-        int[] target1 = {1,5,7,8,9,11,18,19,20,25};
+        int[] target1 = {1, 5, 7, 8, 9, 11, 18, 19, 20, 25};
         BinarySearch binarySearch = new BinarySearch();
         binarySearch.setValue(target1);
         binarySearch.printValue();

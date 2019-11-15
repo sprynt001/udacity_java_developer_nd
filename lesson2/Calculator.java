@@ -1,9 +1,8 @@
 // Implementing a calculator for basic operations '+' '-' '*' on non
 // negative integers
 
-class Calculator
-{
-    public static void main(String[] args){
+class Calculator {
+    public static void main(String[] args) {
         if (args.length != 1) {
             System.out.println("Calculator usage:");
             System.out.println("\tEnter a string to compute.");
@@ -21,13 +20,13 @@ class Calculator
         String expr = args[0];
         // First do multiplications
         int startIndex = 0;
-        int index=0;
+        int index = 0;
         bool firstComputation = true;
-        while(index >=0){
-            index = expr.indexOf("*",index);
-            if (index < expr.length-1) {
-                int lvalue = getvalue(expr,index,"left");
-                int rvalue = getvalue(expr,index,"right");
+        while (index >= 0) {
+            index = expr.indexOf("*", index);
+            if (index < expr.length - 1) {
+                int lvalue = getvalue(expr, index, "left");
+                int rvalue = getvalue(expr, index, "right");
                 if (firstComputation) {
                     answer = lvalue;
                 }

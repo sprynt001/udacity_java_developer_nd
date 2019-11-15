@@ -5,8 +5,7 @@
 
 import java.util.LinkedList;
 
-class GroupIntoLists
-{
+class GroupIntoLists {
     public static void main(String[] args) {
         if (args.length != 1) {
             System.out.println("GroupIntoLists usage:");
@@ -19,13 +18,13 @@ class GroupIntoLists
 
             return;
         }
-        
+
         // Split the string on the commas and insert into relevant lists
         String[] words = args[0].split(",");
         LinkedList<String> group0 = new LinkedList<String>();
         LinkedList<String> group1 = new LinkedList<String>();
         LinkedList<String> group2 = new LinkedList<String>();
-        for (int i=0; i<words.length; i++){
+        for (int i = 0; i < words.length; i++) {
             String word = words[i].toLowerCase();
             if (word.startsWith("a")) {
                 group0.add(words[i]);

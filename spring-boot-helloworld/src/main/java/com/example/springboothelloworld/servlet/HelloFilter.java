@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
-@WebFilter(filterName="helloFilter", urlPatterns = "/helloServlet")
+@WebFilter(filterName = "helloFilter", urlPatterns = "/helloServlet")
 public class HelloFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest,
